@@ -1,0 +1,10 @@
+width=650
+height=420
+location=center
+show=drun
+prompt=Search
+allow_markup=true
+insensitive=true
+hide_scroll=true
+gtk_dark=true
+term=foot

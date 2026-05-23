@@ -1,0 +1,26 @@
+font=JetBrains Mono 11
+background-color=#313244dd
+text-color=#cdd6f4
+border-color=#89b4fa
+border-size=2
+border-radius=14
+padding=12
+margin=12
+width=360
+height=120
+default-timeout=5000
+ignore-timeout=0
+group-by=app-name
+sort=-time
+layer=overlay
+anchor=top-right
+
+[urgency=low]
+border-color=#6c7086
+
+[urgency=normal]
+border-color=#89b4fa
+
+[urgency=high]
+border-color=#f38ba8
+default-timeout=0
