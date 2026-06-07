@@ -1,68 +1,24 @@
+window#waybar {
+    background: transparent;
+}
 * {
     border: none;
-    font-family: "JetBrains Mono", "Noto Sans", "Roboto", sans-serif;
+    border-radius: 0;
+    font-family: "JetBrains Mono", sans-serif;
     font-size: 14px;
-    font-weight: 700;
+    font-weight: bold;
     min-height: 0;
 }
 
-window#waybar {
-    background: transparent;
-    color: #cdd6f4;
-}
-
-/* Shared pill look */
-##workspaces,
-#window,
-#clock
-#custom-perf,
-#backlight,
-#pulseaudio,
-#network,
-#bluetooth,
-#battery,
-#tray {   background: rgba(49, 50, 68, 0.88);
-    color: #d9e0ee;
-    border-radius: 22px;
-    padding: 7px 15px;
-    margin: 6px 4px;
-}
-
-/* Workspace dock */
-#workspaces {
-    padding-left: 8px;
-    padding-right: 8px;
-}
-
-#workspaces button {
-    background: transparent;
-    color: #cdd6f4;
-    border-radius: 16px;
-    padding: 4px 10px;
-    margin: 0 2px;
-    font-weight: 800;
-}
-
-#workspaces button.focused {
-    background: #89b4fa;
-    color: #1e1e2e;
-}
-
-#workspaces button:hover {
-    background: rgba(137, 180, 250, 0.25);
-    color: #ffffff;
-}
-
-/* Window title */
 #window {
+    color: #dce7ff;
     min-width: 180px;
-    padding-left: 16px;
-    padding-right: 16px;
-    color: #cdd6f4;
-    font-weight: 800;
+
+    padding-left: 18px;
+    padding-right: 18px;
 }
 
-/* Center clock */
+/* --- Clock --- */
 #clock {
     background: #89b4fa;
     color: #1e1e2e;
@@ -72,25 +28,40 @@ window#waybar {
     font-size: 15px;
     font-weight: 900;
 }
-/* Right side pills */
-#custom-perf,
-#backlight,
-#pulseaudio,
-#network,
-#bluetooth,
-#battery,
-#tray {
-    padding-left: 14px;
-    padding-right: 14px;
-}
-/* States */
-#bluetooth.connected {
+/* --- PERF Pill --- */
+
+#custom-perf {
+    background: rgba(137, 180, 250, 0.12);
     color: #89b4fa;
+
+    padding-left: 16px;
+    padding-right: 16px;
+
+    transition:
+    background 0.22s ease,
+    color 0.22s ease;
 }
 
-#battery.charging {
-    color: #89b4fa;
+#custom-perf:hover {
+    background: rgba(137, 180, 250, 0.20);
+    color: #dce7ff;
+
+    box-shadow:
+        0 0 8px rgba(137,180,250,0.14);
 }
+
+/* --- Hover States --- */
+
+#backlight:hover,
+#pulseaudio:hover,
+#network:hover,
+#bluetooth:hover,
+#battery:hover,
+#tray:hover {
+    background: rgba(137, 180, 250, 0.16);
+}
+
+/* --- Battery --- */
 
 #battery.warning {
     color: #f9e2af;
@@ -99,16 +70,58 @@ window#waybar {
 #battery.critical {
     color: #f38ba8;
 }
-#tray > .passive,
-#tray > .active,
-#tray > .needs-attention {
-    padding: 0 4px;
-}
-/* Tooltip */
+
+/* --- Tooltip --- */
+
 tooltip {
     background: #1e1e2e;
     color: #d9e0ee;
     border: 1px solid #45475a;
     border-radius: 14px;
-    padding: 8px;
+}
+/* --- Shared Pills --- */
+
+#workspaces,
+#window,
+#custom-perf,
+#backlight,
+#pulseaudio,
+#network,
+#bluetooth,
+#battery,
+#tray {
+    background-color: rgba(49, 50, 68, 0.88);
+
+    border-radius: 999px;
+
+    padding: 0 14px;
+
+    margin: 6px 4px;
+}
+#workspaces button {
+    background: transparent;
+    color: #cdd6f4;
+
+    border-radius: 999px;
+
+    padding: 2px 12px;
+
+    margin: 0 2px;
+
+    transition:
+        background 0.18s ease,
+        color 0.18s ease;
+}
+#workspaces button.focused {
+    background: #89b4fa;
+    color: #1e1e2e;
+
+    border-radius: 999px;
+}
+#tray {
+    padding: 0 14px;
+}
+
+#tray * {
+    padding: 0 2px;
 }

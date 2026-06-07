@@ -1,10 +1,24 @@
+* {
+    transition:
+        background 0.18s ease,
+        color 0.18s ease,
+        border-color 0.18s ease;
+}
+
 window {
-    margin: 0px;
-    border: 2px solid #89b4fa;
-    border-radius: 18px;
-    background-color: rgba(30, 30, 46, 0.95);
+    background-color: rgba(24, 24, 37, 0.92);
+
+    border: 2px solid rgba(137, 180, 250, 0.7);
+
+    border-radius: 22px;
+
+    padding: 18px;
+
+    transition:
+        border-color 0.2s ease,
+        background-color 0.2s ease;
+
     font-family: "JetBrains Mono";
-    font-size: 14px;
 }
 
 #outer-box {
@@ -13,12 +27,19 @@ window {
 }
 
 #input {
-    margin: 8px;
-    padding: 12px;
+    background-color: rgba(49, 50, 68, 0.95);
+
+    color: #dce7ff;
+
     border: none;
-    border-radius: 14px;
-    background-color: #313244;
-    color: #cdd6f4;
+
+    border-radius: 16px;
+
+    padding: 14px 18px;
+
+    margin-bottom: 16px;
+
+    font-size: 15px;
 }
 
 #scroll {
@@ -26,15 +47,23 @@ window {
 }
 
 #entry {
-    padding: 10px 14px;
-    margin: 4px 0px;
-    border-radius: 12px;
-    color: #cdd6f4;
+    padding: 12px 16px;
+
+    border-radius: 14px;
+
+    margin: 4px 0;
+
+    transition:
+        background 0.16s ease,
+        color 0.16s ease;
 }
 
 #entry:selected {
-    background-color: #89b4fa;
+    background: #89b4fa;
+
     color: #1e1e2e;
+
+    border-radius: 14px;
 }
 
 #text {
