@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./screenshots/desktop.png" width="100%">
+  <img src="./screenshots/desktop-v1.1.png" width="100%">
 </p>
 
 <h1 align="center">Monarch-Sway</h1>
@@ -11,7 +11,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/WM-Sway-89B4FA?style=for-the-badge&labelColor=1e1e2e">
   <img src="https://img.shields.io/badge/Wayland-Workflow-89B4FA?style=for-the-badge&labelColor=1e1e2e">
-  <img src="https://img.shields.io/badge/Version-v1.0-89B4FA?style=for-the-badge&labelColor=1e1e2e">
+  <img src="https://img.shields.io/badge/Version-v1.1-89B4FA?style=for-the-badge&labelColor=1e1e2e">
 </p>
 
 <p align="center">
@@ -20,113 +20,190 @@
 
 ---
 
-## Overview
+# Overview
 
 Monarch-Sway is a productivity-focused SwayWM configuration built around a clean dark interface with soft blue accents inspired by Material Expressive styling and Omarchy-like minimalism.
 
 The goal is to create a desktop that feels:
 
-- Minimal
-- Consistent
-- Lightweight
-- Readable
-- Modular
-- Professional
+* Minimal
+* Consistent
+* Lightweight
+* Readable
+* Modular
+* Professional
 
 This setup prioritizes usability first, aesthetics second.
 
 ---
 
-## Preview
+# What's New in v1.1
 
-### Desktop
+Monarch-Sway v1.1 focuses on improving workflow, display controls and system usability while preserving the original Monarch philosophy.
+
+## Productivity
+
+* Quick File Search (`Mod + Shift + F`)
+* Clipboard History (`Mod + V`)
+* Improved workflow menus
+
+## Display & Power
+
+* Night Light with temperature presets (`Mod + X`)
+* Caffeine Mode with duration presets (`Mod + C`)
+* Display Settings submenu (`Mod + Esc`)
+* Improved Power Profile workflow
+
+## Notifications
+
+* Battery level notifications
+* Charging state notifications
+* Screenshot notifications
+* Recording notifications
+
+## UI
+
+* Transparent Waybar restored
+* Additional workflow polish
+* Improved consistency across menus
+
+---
+
+# Preview
+
+## Desktop (v1.1)
+
+![Desktop v1.1](./screenshots/desktop-v1.1.png)
+
+## Display Settings
+
+![Display Settings](./screenshots/display-settings.png)
+
+## Night Light
+
+![Night Light](./screenshots/nightlight-menu.png)
+
+## Caffeine Mode
+
+![Caffeine Mode](./screenshots/caffeine-menu.png)
+
+## Quick File Search
+
+![Quick File Search](./screenshots/file-search.png)
+
+---
+
+# Original v1.0 Preview
+
+## Desktop
 
 ![Desktop](./screenshots/desktop.png)
 
-### Waybar
+## Waybar
 
 ![Waybar](./screenshots/waybar.png)
 
-### Launcher
+## Launcher
 
 ![Launcher](./screenshots/launcher.png)
 
-### Power Menu
+## Power Menu
 
 ![Power Menu](./screenshots/power-menu.png)
 
-### Power Profiles
+## Power Profiles
 
 ![Power Profiles](./screenshots/power-profile.png)
 
-### Fastfetch
+## Fastfetch
 
 ![Fastfetch](./screenshots/fastfetch.png)
 
 ---
 
-## Features
+# Features
 
-- Clean soft-blue accent UI
-- Minimal SwayWM workflow
-- Custom modular Waybar setup
-- Transparent Waybar styling
-- Wofi launcher customization
-- Wallpaper picker integration
-- Performance menu integration
-- Power profile selector
-- Do Not Disturb toggle
-- Screenshot and recording workflow
-- Fastfetch branding
-- Mako notifications
-- Blur-style lockscreen integration
-- Consistent styling across all components
+## Core Features (v1.0)
+
+* Clean soft-blue accent UI
+* Minimal SwayWM workflow
+* Custom modular Waybar setup
+* Transparent Waybar styling
+* Wofi launcher customization
+* Wallpaper picker integration
+* Performance menu integration
+* Power profile selector
+* Do Not Disturb toggle
+* Screenshot and recording workflow
+* Fastfetch branding
+* Mako notifications
+* Blur-style lockscreen integration
+* Consistent styling across all components
+
+## New Features (v1.1)
+
+* Night Light presets
+* Caffeine Mode presets
+* Display Settings menu
+* Quick File Search
+* Clipboard History
+* Battery notifications
+* Charging notifications
+* Improved workflow integration
+* Restored transparent Waybar
 
 ---
 
-## Stack
+# Stack
 
-| Component | Package |
-|----------|----------|
-| Window Manager | Sway |
-| Status Bar | Waybar |
-| Launcher | Wofi |
-| Terminal | Foot |
-| Notifications | Mako |
-| Shell | Zsh |
-| Fetch Utility | Fastfetch |
+| Component      | Package   |
+| -------------- | --------- |
+| Window Manager | Sway      |
+| Status Bar     | Waybar    |
+| Launcher       | Wofi      |
+| Terminal       | Foot      |
+| Notifications  | Mako      |
+| Shell          | Zsh       |
+| Fetch Utility  | Fastfetch |
 
 ---
 
-## Dependencies
+# Dependencies
 
-Install the following before applying the rice.
+## Core Packages
 
-### Core Packages
+* sway
+* waybar
+* wofi
+* foot
+* mako
+* fastfetch
+* zsh
 
-- sway
-- waybar
-- wofi
-- foot
-- mako
-- fastfetch
-- zsh
+## Utilities
 
-### Utilities
+* grim
+* slurp
+* wl-clipboard
+* brightnessctl
+* playerctl
+* network-manager
+* pavucontrol
+* pipewire / pactl
+* swaybg
+* swayidle
+* swaylock
 
-- grim
-- slurp
-- wl-clipboard
-- brightnessctl
-- playerctl
-- network-manager
-- pavucontrol
-- pipewire / pactl
-- swaybg
-- swayidle
-- swaylock
+## Additional v1.1 Dependencies
 
-Ubuntu / Debian example:
+* gammastep
+* cliphist
+* blueman
+* wf-recorder
+* nautilus
+* power-profiles-daemon
+
+### Ubuntu / Debian Example
 
 ```bash
 sudo nala install \
@@ -150,17 +227,18 @@ sudo nala install \
   blueman \
   wf-recorder \
   nautilus \
-  power-profiles-daemon
+  power-profiles-daemon \
+  gammastep
 ```
 
 ---
 
-## Installation
+# Installation
 
 Clone the repository:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/Monarch-Sway.git
+git clone https://github.com/sharanfr/Monarch-Sway.git
 cd Monarch-Sway
 ```
 
@@ -173,12 +251,11 @@ mkdir -p ~/.config
 Copy the configuration folders:
 
 ```bash
-cp -r .config/sway ~/.config/
-cp -r .config/waybar ~/.config/
-cp -r .config/wofi ~/.config/
-cp -r .config/foot ~/.config/
-cp -r .config/mako ~/.config/
-cp -r .config/fastfetch ~/.config/
+cp -r foot ~/.config/
+cp -r mako ~/.config/
+cp -r sway ~/.config/
+cp -r waybar ~/.config/
+cp -r wofi ~/.config/
 ```
 
 Reload Sway:
@@ -191,182 +268,162 @@ Or restart the Wayland session.
 
 ---
 
-## Folder Structure
+# Folder Structure
 
-```bash
+```text
 Monarch-Sway
-├── .config/
-│   ├── fastfetch/
-│   ├── foot/
-│   ├── mako/
-│   ├── sway/
-│   ├── waybar/
-│   └── wofi/
-│
 ├── docs/
-│   └── keybindings.md
-│
-└── screenshots/
+├── fastfetch/
+├── foot/
+├── mako/
+├── screenshots/
+├── sway/
+├── waybar/
+├── wofi/
+└── README.md
 ```
 
 ---
 
-## Keybindings
+# Keybindings
 
-All shortcuts are documented here:
+All shortcuts are documented in:
 
-```bash
+```text
 docs/keybindings.md
 ```
 
+## New v1.1 Keybindings
+
+| Shortcut        | Action            |
+| --------------- | ----------------- |
+| Mod + X         | Night Light       |
+| Mod + C         | Caffeine Mode     |
+| Mod + Esc       | Display Settings  |
+| Mod + Shift + F | Quick File Search |
+| Mod + V         | Clipboard History |
+
 Includes:
 
-- App launcher
-- Terminal
-- File manager
-- Screenshot workflow
-- Screen recording
-- Workspace switching
-- DND toggle
-- Power menu
-- Wallpaper picker
-- Lockscreen
-- Volume / brightness
-- Window controls
+* App launcher
+* Terminal
+* File manager
+* Screenshot workflow
+* Screen recording
+* Workspace switching
+* DND toggle
+* Power menu
+* Wallpaper picker
+* Lockscreen
+* Volume / brightness
+* Window controls
 
 ---
 
-## Customization
+# Customization
 
-### Sway
+## Sway
 
 Main behavior and keybindings:
 
-```bash
-.config/sway/config
+```text
+sway/config
 ```
 
-Edit for:
-- keybindings
-- startup apps
-- workspace behavior
-- floating windows
-- power menus
-- wallpaper integration
-
----
-
-### Waybar
+## Waybar
 
 Modules:
 
-```bash
-.config/waybar/config
+```text
+waybar/config
 ```
 
 Styling:
 
-```bash
-.config/waybar/style.css
+```text
+waybar/style.css
 ```
 
-Edit for:
-- clock
-- tray
-- battery
-- bluetooth
-- network
-- performance menu
-- layout spacing
-- colors
-- transparency
-
----
-
-### Wofi
+## Wofi
 
 Launcher config:
 
-```bash
-.config/wofi/config
+```text
+wofi/config
 ```
 
 Styling:
 
-```bash
-.config/wofi/style.css
+```text
+wofi/style.css
+```
+
+## Notifications
+
+```text
+mako/config
+```
+
+## Terminal
+
+```text
+foot/foot.ini
 ```
 
 ---
 
-### Fastfetch
-
-Configuration:
-
-```bash
-.config/fastfetch/config.jsonc
-```
-
-ASCII branding:
-
-```bash
-.config/fastfetch/ascii.txt
-```
-
----
-
-### Notifications
-
-Mako config:
-
-```bash
-.config/mako/config
-```
-
----
-
-### Terminal
-
-Foot config:
-
-```bash
-.config/foot/foot.ini
-```
-
----
-
-## Wallpaper
+# Wallpaper
 
 Wallpaper references may be customized inside:
 
-```bash
-.config/sway/config
+```text
+sway/config
 ```
 
 and supporting scripts inside:
 
-```bash
-.config/sway/scripts/
+```text
+sway/scripts/
 ```
 
 ---
 
-## Notes
+# Notes
 
 This rice was built around a personal workflow and may require small changes depending on:
 
-- display resolution
-- monitor layout
-- distro-specific package names
-- audio backend
-- tray support
-- GPU / rendering behavior
-- wallpaper paths
-- bluetooth implementation
+* display resolution
+* monitor layout
+* distro-specific package names
+* audio backend
+* tray support
+* GPU / rendering behavior
+* wallpaper paths
+* bluetooth implementation
 
 ---
 
-## Philosophy
+# Release History
+
+## v1.0
+
+Initial public release.
+
+## v1.1
+
+* Night Light
+* Caffeine Mode
+* Display Settings
+* Quick File Search
+* Clipboard History
+* Battery Notifications
+* Charging Notifications
+* Transparent Waybar
+* Workflow improvements
+
+---
+
+# Philosophy
 
 Monarch-Sway is built around:
 
@@ -376,7 +433,8 @@ The intention is to keep the desktop visually clean while remaining fast, practi
 
 ---
 
-## License
+# License
 
-Personal configuration.  
+Personal configuration.
+
 Free to use, modify and adapt.
