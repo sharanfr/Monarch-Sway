@@ -1,0 +1,127 @@
+window#waybar {
+    background: transparent;
+}
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "JetBrains Mono", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    min-height: 0;
+}
+
+#window {
+    color: #dce7ff;
+    min-width: 180px;
+
+    padding-left: 18px;
+    padding-right: 18px;
+}
+
+/* --- Clock --- */
+#clock {
+    background: #89b4fa;
+    color: #1e1e2e;
+    padding: 0 22px;
+    min-height: 38px;
+    border-radius: 999px;
+    font-size: 15px;
+    font-weight: 900;
+}
+/* --- PERF Pill --- */
+
+#custom-perf {
+    background: rgba(137, 180, 250, 0.12);
+    color: #89b4fa;
+
+    padding-left: 16px;
+    padding-right: 16px;
+
+    transition:
+    background 0.22s ease,
+    color 0.22s ease;
+}
+
+#custom-perf:hover {
+    background: rgba(137, 180, 250, 0.20);
+    color: #dce7ff;
+
+    box-shadow:
+        0 0 8px rgba(137,180,250,0.14);
+}
+
+/* --- Hover States --- */
+
+#backlight:hover,
+#pulseaudio:hover,
+#network:hover,
+#bluetooth:hover,
+#battery:hover,
+#tray:hover {
+    background: rgba(137, 180, 250, 0.16);
+}
+
+/* --- Battery --- */
+
+#battery.warning {
+    color: #f9e2af;
+}
+
+#battery.critical {
+    color: #f38ba8;
+}
+
+/* --- Tooltip --- */
+
+tooltip {
+    background: #1e1e2e;
+    color: #d9e0ee;
+    border: 1px solid #45475a;
+    border-radius: 14px;
+}
+/* --- Shared Pills --- */
+
+#workspaces,
+#window,
+#custom-perf,
+#backlight,
+#pulseaudio,
+#network,
+#bluetooth,
+#battery,
+#tray {
+    background-color: rgba(49, 50, 68, 0.88);
+
+    border-radius: 999px;
+
+    padding: 0 14px;
+
+    margin: 6px 4px;
+}
+#workspaces button {
+    background: transparent;
+    color: #cdd6f4;
+
+    border-radius: 999px;
+
+    padding: 2px 12px;
+
+    margin: 0 2px;
+
+    transition:
+        background 0.18s ease,
+        color 0.18s ease;
+}
+#workspaces button.focused {
+    background: #89b4fa;
+    color: #1e1e2e;
+
+    border-radius: 999px;
+}
+#tray {
+    padding: 0 14px;
+}
+
+#tray * {
+    padding: 0 2px;
+}
