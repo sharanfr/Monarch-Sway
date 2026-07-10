@@ -1,17 +1,17 @@
 <p align="center">
-  <img src="./screenshots/desktop-v1.1.png" width="100%">
+  <img src="./screenshots/v1.2/desktop_v1.2.png" width="100%">
 </p>
 
 <h1 align="center">Monarch-Sway</h1>
 
 <p align="center">
-  A clean, minimal and modular SwayWM rice built for productivity, consistency and polished Wayland workflows.
+  A clean, minimal and modular SwayWM desktop built for productivity, consistency and polished Wayland workflows.
 </p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/WM-Sway-89B4FA?style=for-the-badge&labelColor=1e1e2e">
   <img src="https://img.shields.io/badge/Wayland-Workflow-89B4FA?style=for-the-badge&labelColor=1e1e2e">
-  <img src="https://img.shields.io/badge/Version-v1.1-89B4FA?style=for-the-badge&labelColor=1e1e2e">
+  <img src="https://img.shields.io/badge/Version-v1.2-89B4FA?style=for-the-badge&labelColor=1e1e2e">
 </p>
 
 <p align="center">
@@ -22,56 +22,118 @@
 
 # Overview
 
-Monarch-Sway is a productivity-focused SwayWM configuration built around a clean dark interface with soft blue accents inspired by Material Expressive styling and Omarchy-like minimalism.
+Monarch-Sway is a productivity-focused SwayWM configuration built around a clean dark interface with soft blue accents inspired by Material Expressive design and Omarchy-inspired minimalism.
 
 The goal is to create a desktop that feels:
 
-* Minimal
-* Consistent
-* Lightweight
-* Readable
-* Modular
-* Professional
+- Minimal
+- Consistent
+- Lightweight
+- Readable
+- Modular
+- Professional
 
-This setup prioritizes usability first, aesthetics second.
+Monarch emphasizes keyboard-first workflows, fast access to everyday system controls and a cohesive user experience while remaining lightweight and modular.
+
+This setup prioritizes usability first and aesthetics second.
 
 ---
 
-# What's New in v1.1
+# What's New in v1.2
 
-Monarch-Sway v1.1 focuses on improving workflow, display controls and system usability while preserving the original Monarch philosophy.
+Monarch-Sway v1.2 is a refinement-focused release that improves workflow integration, desktop usability and overall consistency while preserving the original Monarch philosophy.
 
 ## Productivity
 
-* Quick File Search (`Mod + Shift + F`)
-* Clipboard History (`Mod + V`)
-* Improved workflow menus
+- Monarch Network Manager (`Mod + I`)
+- Quick File Search (`Mod + Shift + F`)
+- Clipboard History (`Mod + V`)
+- Improved workflow menus
 
 ## Display & Power
 
-* Night Light with temperature presets (`Mod + X`)
-* Caffeine Mode with duration presets (`Mod + C`)
-* Display Settings submenu (`Mod + Esc`)
-* Improved Power Profile workflow
+- Night Light Improvements (`Mod + X`)
+- Caffeine Mode Improvements (`Mod + C`)
+- Display Settings submenu (`Mod + Esc`)
+- Performance Profile menu (`Mod + P`)
+- Clickable Power Profile indicator
+- Improved Power Profile workflow
 
 ## Notifications
 
-* Battery level notifications
-* Charging state notifications
-* Screenshot notifications
-* Recording notifications
+- Proper Do Not Disturb
+- Reliable Night Light notifications
+- Reliable Caffeine notifications
+- Battery level notifications
+- Charging state notifications
+- Screenshot notifications
+- Recording notifications
 
 ## UI
 
-* Transparent Waybar restored
-* Additional workflow polish
-* Improved consistency across menus
+- Waybar status indicators
+- Night Light indicator
+- Caffeine indicator
+- DND indicator
+- Improved Network workflow
+- Improved Waybar consistency
+- Numerous workflow refinements
 
 ---
 
-# Preview
+# Gallery
 
-## Desktop (v1.1)
+## Desktop
+
+![Desktop](./screenshots/v1.2/desktop_v1.2.png)
+
+---
+
+## Monarch Network Manager
+
+![Network](./screenshots/v1.2/network.png)
+
+---
+
+## Night Light
+
+![Night Light](./screenshots/v1.2/nightlight.png)
+
+---
+
+## Night Light Indicator
+
+![Night Light Indicator](./screenshots/v1.2/nightlight_logo.png)
+
+---
+
+## Caffeine Mode
+
+![Caffeine](./screenshots/v1.2/caffeine.png)
+
+---
+
+## Caffeine Indicator
+
+![Caffeine Indicator](./screenshots/v1.2/caffeine_logo.png)
+
+---
+
+## Do Not Disturb
+
+![DND](./screenshots/v1.2/dnd.png)
+
+---
+
+## DND Indicator
+
+![DND Indicator](./screenshots/v1.2/dnd_logo.png)
+
+---
+
+# Original v1.1 Preview
+
+## Desktop
 
 ![Desktop v1.1](./screenshots/desktop-v1.1.png)
 
@@ -125,46 +187,60 @@ Monarch-Sway v1.1 focuses on improving workflow, display controls and system usa
 
 ## Core Features (v1.0)
 
-* Clean soft-blue accent UI
-* Minimal SwayWM workflow
-* Custom modular Waybar setup
-* Transparent Waybar styling
-* Wofi launcher customization
-* Wallpaper picker integration
-* Performance menu integration
-* Power profile selector
-* Do Not Disturb toggle
-* Screenshot and recording workflow
-* Fastfetch branding
-* Mako notifications
-* Blur-style lockscreen integration
-* Consistent styling across all components
+- Clean soft-blue accent UI
+- Minimal SwayWM workflow
+- Custom modular Waybar setup
+- Transparent Waybar styling
+- Wofi launcher customization
+- Wallpaper picker integration
+- Performance menu integration
+- Power profile selector
+- Do Not Disturb toggle
+- Screenshot and recording workflow
+- Fastfetch branding
+- Mako notifications
+- Blur-style lockscreen integration
+- Consistent styling across all components
 
 ## New Features (v1.1)
 
-* Night Light presets
-* Caffeine Mode presets
-* Display Settings menu
-* Quick File Search
-* Clipboard History
-* Battery notifications
-* Charging notifications
-* Improved workflow integration
-* Restored transparent Waybar
+- Night Light presets
+- Caffeine Mode presets
+- Display Settings menu
+- Quick File Search
+- Clipboard History
+- Battery notifications
+- Charging notifications
+- Transparent Waybar
+
+## New Features (v1.2)
+
+- Monarch Network Manager
+- Automatic Wi-Fi reconnect
+- Waybar Network integration
+- Night Light status indicator
+- Caffeine status indicator
+- DND status indicator
+- Clickable Power Profile
+- Improved notification system
+- Improved Night Light workflow
+- Improved Caffeine workflow
+- Better Waybar integration
+- Numerous bug fixes and workflow improvements
 
 ---
 
 # Stack
 
-| Component      | Package   |
-| -------------- | --------- |
-| Window Manager | Sway      |
-| Status Bar     | Waybar    |
-| Launcher       | Wofi      |
-| Terminal       | Foot      |
-| Notifications  | Mako      |
-| Shell          | Zsh       |
-| Fetch Utility  | Fastfetch |
+| Component | Package |
+|-----------|---------|
+| Window Manager | Sway |
+| Status Bar | Waybar |
+| Launcher | Wofi |
+| Terminal | Foot |
+| Notifications | Mako |
+| Shell | Zsh |
+| Fetch Utility | Fastfetch |
 
 ---
 
@@ -172,36 +248,36 @@ Monarch-Sway v1.1 focuses on improving workflow, display controls and system usa
 
 ## Core Packages
 
-* sway
-* waybar
-* wofi
-* foot
-* mako
-* fastfetch
-* zsh
+- sway
+- waybar
+- wofi
+- foot
+- mako
+- fastfetch
+- zsh
 
 ## Utilities
 
-* grim
-* slurp
-* wl-clipboard
-* brightnessctl
-* playerctl
-* network-manager
-* pavucontrol
-* pipewire / pactl
-* swaybg
-* swayidle
-* swaylock
+- grim
+- slurp
+- wl-clipboard
+- brightnessctl
+- playerctl
+- network-manager
+- pavucontrol
+- pipewire / pactl
+- swaybg
+- swayidle
+- swaylock
+- nmcli
+## Additional v1.2 Dependencies
 
-## Additional v1.1 Dependencies
-
-* gammastep
-* cliphist
-* blueman
-* wf-recorder
-* nautilus
-* power-profiles-daemon
+- gammastep
+- cliphist
+- blueman
+- wf-recorder
+- nautilus
+- power-profiles-daemon
 
 ### Ubuntu / Debian Example
 
@@ -242,7 +318,7 @@ git clone https://github.com/sharanfr/Monarch-Sway.git
 cd Monarch-Sway
 ```
 
-Create config directory:
+Create the configuration directory:
 
 ```bash
 mkdir -p ~/.config
@@ -254,8 +330,10 @@ Copy the configuration folders:
 cp -r foot ~/.config/
 cp -r mako ~/.config/
 cp -r sway ~/.config/
+cp -r swaylock ~/.config/
 cp -r waybar ~/.config/
 cp -r wofi ~/.config/
+cp -r fastfetch ~/.config/
 ```
 
 Reload Sway:
@@ -264,7 +342,7 @@ Reload Sway:
 swaymsg reload
 ```
 
-Or restart the Wayland session.
+or simply log out and log back into your Wayland session.
 
 ---
 
@@ -277,9 +355,13 @@ Monarch-Sway
 ├── foot/
 ├── mako/
 ├── screenshots/
+│   └── v1.2/
 ├── sway/
+├── swaylock/
 ├── waybar/
 ├── wofi/
+├── CHANGELOG.md
+├── LICENSE
 └── README.md
 ```
 
@@ -287,36 +369,39 @@ Monarch-Sway
 
 # Keybindings
 
-All shortcuts are documented in:
+The full list of keybindings is available in:
 
 ```text
 docs/keybindings.md
 ```
 
-## New v1.1 Keybindings
+## New v1.2 Keybindings
 
-| Shortcut        | Action            |
-| --------------- | ----------------- |
-| Mod + X         | Night Light       |
-| Mod + C         | Caffeine Mode     |
-| Mod + Esc       | Display Settings  |
+| Shortcut | Action |
+|-----------|--------|
+| Mod + I | Monarch Network Manager |
+| Mod + X | Night Light |
+| Mod + C | Caffeine Mode |
+| Mod + P | Performance Profiles |
+| Mod + Esc | Display Settings |
 | Mod + Shift + F | Quick File Search |
-| Mod + V         | Clipboard History |
+| Mod + V | Clipboard History |
+| Mod + F4 | Toggle Do Not Disturb |
 
-Includes:
+Additional shortcuts include:
 
-* App launcher
-* Terminal
-* File manager
-* Screenshot workflow
-* Screen recording
-* Workspace switching
-* DND toggle
-* Power menu
-* Wallpaper picker
-* Lockscreen
-* Volume / brightness
-* Window controls
+- Application Launcher
+- Terminal
+- File Manager
+- Screenshot Workflow
+- Screen Recording
+- Workspace Switching
+- Power Menu
+- Wallpaper Picker
+- Lockscreen
+- Brightness Controls
+- Volume Controls
+- Window Management
 
 ---
 
@@ -324,11 +409,19 @@ Includes:
 
 ## Sway
 
-Main behavior and keybindings:
+Main configuration:
 
 ```text
 sway/config
 ```
+
+Scripts:
+
+```text
+sway/scripts/
+```
+
+---
 
 ## Waybar
 
@@ -344,9 +437,17 @@ Styling:
 waybar/style.css
 ```
 
+Scripts:
+
+```text
+waybar/scripts/
+```
+
+---
+
 ## Wofi
 
-Launcher config:
+Configuration:
 
 ```text
 wofi/config
@@ -358,11 +459,15 @@ Styling:
 wofi/style.css
 ```
 
+---
+
 ## Notifications
 
 ```text
 mako/config
 ```
+
+---
 
 ## Terminal
 
@@ -372,34 +477,61 @@ foot/foot.ini
 
 ---
 
+## Lockscreen
+
+```text
+swaylock/config
+```
+
+---
+
+## Fastfetch
+
+```text
+fastfetch/
+```
+
+---
+
 # Wallpaper
 
-Wallpaper references may be customized inside:
+Wallpaper behavior is configured inside:
 
 ```text
 sway/config
 ```
 
-and supporting scripts inside:
+Additional wallpaper utilities are located in:
 
 ```text
 sway/scripts/
 ```
 
+Users are encouraged to replace the default wallpaper with one that suits their setup.
+
 ---
 
 # Notes
 
-This rice was built around a personal workflow and may require small changes depending on:
+Monarch-Sway has been developed and tested primarily on:
 
-* display resolution
-* monitor layout
-* distro-specific package names
-* audio backend
-* tray support
-* GPU / rendering behavior
-* wallpaper paths
-* bluetooth implementation
+- Ubuntu 24.04 LTS
+- SwayWM
+- Wayland
+- NetworkManager
+- PipeWire
+
+Depending on your distribution, package names may differ slightly.
+
+Some scripts may require minor adjustments depending on:
+
+- Display resolution
+- Multi-monitor layouts
+- Tray implementation
+- Audio backend
+- Wallpaper locations
+- Bluetooth backend
+- GPU driver configuration
 
 ---
 
@@ -407,34 +539,107 @@ This rice was built around a personal workflow and may require small changes dep
 
 ## v1.0
 
-Initial public release.
+Initial public release featuring the core Monarch workflow.
+
+### Highlights
+
+- Modular Waybar
+- Performance Profiles
+- Wallpaper Picker
+- Fastfetch Branding
+- Screenshot Workflow
+- Mako Notifications
+- Power Menu
+- Blur Lockscreen
+
+---
 
 ## v1.1
 
-* Night Light
-* Caffeine Mode
-* Display Settings
-* Quick File Search
-* Clipboard History
-* Battery Notifications
-* Charging Notifications
-* Transparent Waybar
-* Workflow improvements
+### Added
+
+- Night Light
+- Caffeine Mode
+- Display Settings
+- Clipboard History
+- Quick File Search
+- Battery Notifications
+- Charging Notifications
+
+### Improved
+
+- Transparent Waybar
+- Workflow Menus
+- General UI Consistency
+
+---
+
+## v1.2
+
+### Added
+
+- Monarch Network Manager
+- Waybar Network Integration
+- Automatic Wi-Fi Reconnect
+- Night Light Status Indicator
+- Caffeine Status Indicator
+- DND Status Indicator
+- Clickable Power Profile
+
+### Improved
+
+- Night Light Workflow
+- Caffeine Workflow
+- Notification Reliability
+- Waybar Consistency
+- Network Experience
+- Desktop Polish
+
+### Fixed
+
+- Tray Icons
+- DND Issues
+- Notification Reliability
+- Waybar Startup
+- Mako Startup
+- Caffeine Timeout Handling
+- Network Workflow Bugs
 
 ---
 
 # Philosophy
 
-Monarch-Sway is built around:
+Monarch-Sway follows one simple principle:
 
-> Minimalism without sacrificing workflow.
+> **Minimalism without sacrificing workflow.**
 
-The intention is to keep the desktop visually clean while remaining fast, practical and modular.
+The objective is to provide a desktop that remains:
+
+- Visually clean
+- Keyboard-first
+- Fast
+- Practical
+- Modular
+- Consistent
+
+Every feature included in Monarch is designed to improve everyday usability while keeping the desktop lightweight and distraction-free.
+
+---
+
+# Roadmap
+
+## Planned for v1.3
+
+- Bluetooth Manager
+- Monarch Doctor
+- Enhanced Lockscreen
+- Wallpaper Improvements
+- Additional Workflow Polish
 
 ---
 
 # License
 
-Personal configuration.
+Personal Configuration.
 
-Free to use, modify and adapt.
+Free to use,modify and adapt. 
