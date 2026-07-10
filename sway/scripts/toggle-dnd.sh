@@ -3,9 +3,10 @@
 MODE=$(makoctl mode)
 
 if [ "$MODE" = "default" ]; then
-    makoctl mode -s do-not-disturb
-    notify-send "DND enabled"
+    notify-send "Do Not Disturb" "Enabled"
+    sleep 1
+    makoctl mode -a do-not-disturb
 else
-    makoctl mode -s default
-    notify-send "DND disabled"
+    makoctl mode -r do-not-disturb
+    notify-send "Do Not Disturb" "Disabled"
 fi

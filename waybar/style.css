@@ -4,7 +4,7 @@ window#waybar {
 * {
     border: none;
     border-radius: 0;
-    font-family: "JetBrains Mono", sans-serif;
+    font-family:  "JetBrainsMono Nerd Font", sans-serif;
     font-size: 14px;
     font-weight: bold;
     min-height: 0;
@@ -19,7 +19,7 @@ window#waybar {
 }
 
 /* --- Clock --- */
-#clock {
+#custom-clock {
     background: #89b4fa;
     color: #1e1e2e;
     padding: 0 22px;
@@ -80,7 +80,6 @@ tooltip {
     border-radius: 14px;
 }
 /* --- Shared Pills --- */
-
 #workspaces,
 #window,
 #custom-perf,
@@ -88,6 +87,7 @@ tooltip {
 #pulseaudio,
 #network,
 #bluetooth,
+#custom-powerprofile,
 #battery,
 #tray {
     background-color: rgba(49, 50, 68, 0.88);
@@ -125,3 +125,7 @@ tooltip {
 #tray * {
     padding: 0 2px;
 }
+#custom-powerprofile {
+    font-size: 17px;
+}
+

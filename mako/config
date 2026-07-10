@@ -1,4 +1,4 @@
-font=JetBrains Mono 11
+font=JetBrainsMono Nerd Font 11
 
 background-color=#1e1e2eee
 text-color=#dce7ff
@@ -35,3 +35,6 @@ border-color=#89b4fa
 [urgency=high]
 border-color=#f38ba8
 default-timeout=0
+
+[mode=do-not-disturb]
+invisible=1

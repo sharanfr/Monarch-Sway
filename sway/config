@@ -13,6 +13,7 @@ exec systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP SWA
 exec_always pkill -f gnome-wallpaper-sync.sh; ~/.config/sway/scripts/gnome-wallpaper-sync.sh
 exec_always sh -c 'pkill swaybg; sleep 1; WALL=$(cat ~/.config/sway/current_wallpaper 2>/dev/null); [ -f "$WALL" ] && swaybg -i "$WALL" -m fill'
 exec mako
+exec_always sh -c 'sleep 1; pkill mako 2>/dev/null; exec mako'
 exec_always ~/.config/sway/scripts/battery-monitor.sh &
 
 exec_always pkill swayidle; swayidle -w \
@@ -46,6 +47,7 @@ bindsym $mod+r exec swaymsg reload
 bindsym $mod+f fullscreen toggle
 bindsym $mod+x exec ~/.config/sway/scripts/nightlight-menu.sh
 bindsym $mod+c exec ~/.config/sway/scripts/caffeine-menu.sh
+bindsym $mod+p exec ~/.config/sway/scripts/perf-menu.sh
 
 ### Files / Browser
 bindsym $mod+e exec nautilus
@@ -53,7 +55,7 @@ bindsym $mod+b exec brave-browser
 bindsym $mod+Shift+f exec ~/.config/sway/scripts/file-search.sh
 
 ### Network / Bluetooth
-bindsym $mod+n exec foot -e nmtui
+bindsym $mod+i exec ~/.config/sway/scripts/network-menu.sh
 bindsym $mod+Shift+n exec blueman-manager
 
 ### Clipboard History
@@ -90,9 +92,9 @@ bindsym $mod+Escape exec sh -c '\
 choice=$(printf "Power Saver\nBalanced\nPerformance\nWallpapers\nDisplay Settings" \
 | wofi --dmenu --prompt "System"); \
 case "$choice" in \
-"Power Saver") powerprofilesctl set power-saver ;; \
-"Balanced") powerprofilesctl set balanced ;; \
-"Performance") powerprofilesctl set performance ;; \
+"Power Saver") powerprofilesctl set power-saver; notify-send "Power Profile" "Power Saver Enabled" ;; \
+"Balanced") powerprofilesctl set balanced; notify-send "Power Profile" "Balanced Enabled" ;; \
+"Performance") powerprofilesctl set performance; notify-send "Power Profile" "Performance Enabled" ;; \
 "Wallpapers") ~/.config/sway/scripts/wallpaper-picker.sh ;; \
 "Display Settings") ~/.config/sway/scripts/display-settings.sh ;; \
 esac'
@@ -151,6 +153,13 @@ for_window [title="Open File"] floating enable
 for_window [title="Save File"] floating enable
 for_window [window_role="pop-up"] floating enable
 for_window [window_role="dialog"] floating enable
+for_window [app_id="blueman-manager"] floating enable
+for_window [app_id="blueman-manager"] move position center
+for_window [app_id="blueman-manager"] resize set width 900 px height 650 px
+
+for_window [app_id="pavucontrol"] floating enable
+for_window [app_id="pavucontrol"] move position center
+for_window [app_id="pavucontrol"] resize set width 900 px height 650 px
 
 ### Touchpad
 input "type:touchpad" {

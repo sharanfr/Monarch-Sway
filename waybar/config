@@ -10,21 +10,29 @@
   ],
 
   "modules-center": [
-    "clock"
+    "custom/clock"
   ],
 
   "modules-right": [
-    "custom/perf",
     "backlight",
     "pulseaudio",
     "network",
     "bluetooth",
+    "custom/powerprofile",
     "battery",
     "tray"
   ],
 
-  "custom/perf": {
-    "format": "PERF",
+  "custom/clock": {
+    "exec": "~/.config/waybar/scripts/clock-status.sh",
+    "interval": 1,
+    "tooltip": false,
+    "on-click": "xdg-open https://calendar.google.com"
+  },
+
+  "custom/powerprofile": {
+    "exec": "~/.config/waybar/scripts/power-profile.sh",
+    "interval": 1,
     "tooltip": false,
     "on-click": "~/.config/sway/scripts/perf-menu.sh"
   },
@@ -42,13 +50,6 @@
     "rewrite": {
       "": "Empty Window"
     }
-  },
-
-  "clock": {
-    "format": "{:%H:%M  •  %a %d %b}",
-    "tooltip-format": "{:%A, %d %B %Y}",
-    "interval": 1,
-    "on-click": "xdg-open https://calendar.google.com",
   },
 
   "backlight": {
@@ -69,8 +70,8 @@
     "format-ethernet": "LAN",
     "format-disconnected": "OFF",
     "tooltip": false,
-    "on-click": "foot -e nmtui"
-  },
+    "on-click": "~/.config/sway/scripts/network-menu.sh"
+},	
 
   "bluetooth": {
     "format": "BT",
@@ -89,8 +90,9 @@
       "critical": 15
     }
   },
-"tray": {
+
+  "tray": {
     "icon-size": 16,
     "spacing": 10
-}
+  }
 }
